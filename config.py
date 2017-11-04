@@ -1,5 +1,5 @@
 c.downloads.location.directory = "~/downloads"
-c.editor.command = [ "termite", "-e", "vim -f {}"]
+c.editor.command = [ "termite", "-e", "nvim -f {}"]
 c.editor.encoding = "utf-8"
 
 c.url.searchengines = {
@@ -10,18 +10,18 @@ c.url.searchengines = {
 
 c.url.start_pages = [ "https://duckduckgo.com" ]
 
-c.fonts.completion.entry = "12px Hack"
-c.fonts.completion.category = "12px Hack"
-c.fonts.debug_console = "12px Hack"
-c.fonts.downloads = "12px Hack"
-c.fonts.hints = "12px Hack"
-c.fonts.keyhint = "12px Hack"
-c.fonts.messages.info = "12px Hack"
-c.fonts.messages.error = "12px Hack"
+c.fonts.completion.entry = "11px Hack"
+c.fonts.completion.category = "11px Hack"
+c.fonts.debug_console = "11px Hack"
+c.fonts.downloads = "11px Hack"
+c.fonts.hints = "11px Hack"
+c.fonts.keyhint = "11px Hack"
+c.fonts.messages.info = "11px Hack"
+c.fonts.messages.error = "11px Hack"
 c.fonts.monospace = "Hack"
-c.fonts.prompts = "12px Hack"
-c.fonts.statusbar = "12px Hack"
-c.fonts.tabs = "12px Hack"
+c.fonts.prompts = "11px Hack"
+c.fonts.statusbar = "11px Hack"
+c.fonts.tabs = "11px Hack"
 
 c.tabs.padding = {"bottom" : 5, "top" : 5, "left" : 5, "right" : 5 }
 c.tabs.last_close = "startpage"
@@ -37,8 +37,8 @@ config.bind("eM", 'hint links spawn mpv {hint-url}')
 config.bind("<Ctrl-r>", "set-cmd-text :open reddit.com/r/")
 config.bind("<Ctrl-Shift-r>", "set-cmd-text :open -t reddit.com/r/")
 
-config.bind("gia", "open allegro.pl")
-config.bind("gna", "open -t allegro.pl")
+config.bind("gia", "open arxiv.org")
+config.bind("gna", "open -t arxiv.org")
 config.bind("gib", "open benchmark.pl")
 config.bind("gnb", "open -t benchmark.pl")
 config.bind("gic", "open ceneo.pl")
@@ -75,8 +75,8 @@ config.bind("gir", "open release24.pl")
 config.bind("gnr", "open -t release24.pl")
 config.bind("gis", "open coursera.org")
 config.bind("gns", "open -t coursera.org")
-config.bind("git", "open thepiratebay.org")
-config.bind("gnt", "open -t thepiratebay.org")
+config.bind("git", "open trojmiasto.pl")
+config.bind("gnt", "open -t trojmiasto.pl")
 config.bind("giu", "open openrouteservice.org")
 config.bind("gnu", "open -t openrouteservice.org")
 config.bind("giv", "open vimcasts.org")
