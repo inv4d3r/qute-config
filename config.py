@@ -1,5 +1,5 @@
 c.downloads.location.directory = "~/downloads"
-c.editor.command = [ "termite", "-e", "nvim -f {}"]
+c.editor.command = [ "urxvt", "-e", "nvim", "{}" ]
 c.editor.encoding = "utf-8"
 
 c.url.searchengines = {
