@@ -31,64 +31,44 @@ config.bind("ec", "config-edit")
 config.bind("em", 'spawn mpv {url}')
 config.bind("eM", 'hint links spawn mpv {hint-url}')
 
-# quick url shortcuts
-
-# for quick subreddit open
+# quick subreddit open
 config.bind("<Ctrl-r>", "set-cmd-text :open reddit.com/r/")
 config.bind("<Ctrl-Shift-r>", "set-cmd-text :open -t reddit.com/r/")
 
-config.bind("gia", "open arxiv.org")
-config.bind("gna", "open -t arxiv.org")
-config.bind("gib", "open benchmark.pl")
-config.bind("gnb", "open -t benchmark.pl")
-config.bind("gic", "open ceneo.pl")
-config.bind("gnc", "open -t ceneo.pl")
-config.bind("gid", "open cinkciarz.pl")
-config.bind("gnd", "open -t cinkciarz.pl")
-config.bind("gie", "open encrypted.google.com")
-config.bind("gne", "open -t encrypted.google.com")
-config.bind("gif", "open facebook.com")
-config.bind("gnf", "open -t facebook.com")
-config.bind("gig", "open gmail.com")
-config.bind("gng", "open -t gmail.com")
-config.bind("gih", "open github.com")
-config.bind("gnh", "open -t github.com")
-config.bind("gii", "open imdb.com")
-config.bind("gni", "open -t imdb.com")
-config.bind("gij", "open yahoo.com")
-config.bind("gnj", "open -t yahoo.com")
-config.bind("gik", "open lkml.org")
-config.bind("gnk", "open -t lkml.org")
-config.bind("gil", "open linkedin.com")
-config.bind("gnl", "open -t linkedin.com")
-config.bind("gim", "open angrymetalguy.com")
-config.bind("gnm", "open -t angrymetalguy.com")
-config.bind("gin", "open privateinternetaccess.com")
-config.bind("gnn", "open -t privateinternetaccess.com")
-config.bind("gio", "open olkb.com")
-config.bind("gno", "open -t olkb.com")
-config.bind("gip", "open pimpmykeyboard.com")
-config.bind("gnp", "open -t pimpmykeyboard.com")
-config.bind("giq", "open qutebrowser.org")
-config.bind("gnq", "open -t qutebrowser.org")
-config.bind("gir", "open release24.pl")
-config.bind("gnr", "open -t release24.pl")
-config.bind("gis", "open coursera.org")
-config.bind("gns", "open -t coursera.org")
-config.bind("git", "open trojmiasto.pl")
-config.bind("gnt", "open -t trojmiasto.pl")
-config.bind("giu", "open openrouteservice.org")
-config.bind("gnu", "open -t openrouteservice.org")
-config.bind("giv", "open vimcasts.org")
-config.bind("gnv", "open -t vimcasts.org")
-config.bind("giw", "open vim.wikia.com")
-config.bind("gnw", "open -t vim.wikia.com")
-config.bind("gix", "open aliexpress.com")
-config.bind("gnx", "open -t aliexpress.com")
-config.bind("giy", "open youtube.com")
-config.bind("gny", "open -t youtube.com")
-config.bind("giz", "open gcc.godbolt.org")
-config.bind("gnz", "open -t gcc.godbolt.org")
+# quick buku add bookmark
+config.bind("gm", "set-cmd-text :spawn buku -a {url}")
+
+# quick marks a'la pentadactyl
+qsites = {
+        'a': 'allegro.pl',
+        'b': 'airdates.tv',
+        'c': 'ceneo.pl',
+        'd': 'cinkciarz.pl',
+        'e': 'coursera.org',
+        'f': 'facebook.com',
+        'g': 'gmail.com',
+        'h': 'filmweb.pl',
+        'i': 'imdb.com',
+        'j': 'linuxjournal.com',
+        'k': 'lkml.org',
+        'l': 'linkedin.com',
+        'm': 'mailfence.com',
+        'n': 'nofluffjobs.com',
+        'o': 'openrouteservice.org',
+        'p': 'lwn.net',
+        'q': 'gcc.godbolt.org',
+        'r': 'release24.pl',
+        's': 'scnsrc.me',
+        't': 'translate.google.com',
+        'u': 'trojmiasto.pl',
+        'v': 'vimcasts.org',
+        'w': 'wiki.archlinux.org',
+        'x': 'aliexpress.com',
+        'y': 'youtube.com',
+        'z': 'mega.nz' }
+for k,v in qsites.items():
+        config.bind("gi" + k, 'open ' + v)
+        config.bind("gn" + k, 'open -t ' + v)
 
 # colors
 
