@@ -32,8 +32,8 @@ config.bind("em", 'spawn mpv {url}')
 config.bind("eM", 'hint links spawn mpv {hint-url}')
 
 # quick subreddit open
-config.bind("<Ctrl-r>", "set-cmd-text :open reddit.com/r/")
-config.bind("<Ctrl-Shift-r>", "set-cmd-text :open -t reddit.com/r/")
+config.bind("<Ctrl-r>", "set-cmd-text :open old.reddit.com/r/")
+config.bind("<Ctrl-Shift-r>", "set-cmd-text :open -t old.reddit.com/r/")
 
 # quick buku add bookmark
 config.bind("gm", "set-cmd-text :spawn buku -a {url}")
@@ -54,7 +54,7 @@ qsites = {
         'l': 'linkedin.com',
         'm': 'mailfence.com',
         'n': 'nofluffjobs.com',
-        'o': 'openrouteservice.org',
+        'o': 'maps.openrouteservice.org',
         'p': 'lwn.net',
         'q': 'gcc.godbolt.org',
         'r': 'release24.pl',
@@ -67,7 +67,7 @@ qsites = {
         'y': 'youtube.com',
         'z': 'mega.nz' }
 for k,v in qsites.items():
-        config.bind("gi" + k, 'open ' + v)
+        config.bind("gc" + k, 'open ' + v)
         config.bind("gn" + k, 'open -t ' + v)
 
 # colors
