@@ -31,6 +31,9 @@ config.bind("ec", "config-edit")
 config.bind("em", 'spawn mpv {url}')
 config.bind("eM", 'hint links spawn mpv {hint-url}')
 
+# spawn qute-pass
+config.bind("<Ctrl-l>", "spawn --userscript qute-pass")
+
 # quick subreddit open
 config.bind("<Ctrl-r>", "set-cmd-text :open old.reddit.com/r/")
 config.bind("<Ctrl-Shift-r>", "set-cmd-text :open -t old.reddit.com/r/")
