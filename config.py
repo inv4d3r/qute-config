@@ -33,12 +33,16 @@ config.bind("ec", "config-edit")
 config.bind("em", 'spawn mpv {url}')
 config.bind("eM", 'hint links spawn mpv {hint-url}')
 
-# qute-pass spawn
-config.bind("<Ctrl-l>", "spawn --userscript qute-pass -d dmenu")
+# spawn qute-pass
+config.bind("<Ctrl-l>a", "spawn -d dmenu --userscript qute-pass")
+config.bind('<Ctrl-l>u', 'spawn -d dmenu --userscript qute-pass --username-only')
+config.bind('<Ctrl-l>p', 'spawn -d dmenu --userscript qute-pass --password-only')
 
 # quick subreddit open
 config.bind("<Ctrl-r>", "set-cmd-text :open old.reddit.com/r/")
 config.bind("<Ctrl-Shift-r>", "set-cmd-text :open -t old.reddit.com/r/")
+config.bind("<Ctrl-c>", "set-cmd-text :open https://en.cppreference.com/w/cpp/")
+config.bind("<Ctrl-Shift-c>", "set-cmd-text :open -t https://en.cppreference.com/w/cpp/")
 
 # quick buku add bookmark
 config.bind("gm", "set-cmd-text :spawn buku -a {url}")
@@ -57,7 +61,7 @@ qsites = {
         'j': 'linuxjournal.com',
         'k': 'lkml.org',
         'l': 'linkedin.com',
-        'm': 'mailfence.com',
+        'm': 'https://mailfence.com',
         'n': 'nofluffjobs.com',
         'o': 'maps.openrouteservice.org',
         'p': 'lwn.net',
