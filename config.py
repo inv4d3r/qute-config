@@ -35,9 +35,9 @@ config.bind("em", 'spawn mpv {url}')
 config.bind("eM", 'hint links spawn mpv {hint-url}')
 
 # spawn qute-pass
-config.bind("<Ctrl-l>a", "spawn -d dmenu --userscript qute-pass")
-config.bind('<Ctrl-l>u', 'spawn -d dmenu --userscript qute-pass --username-only')
-config.bind('<Ctrl-l>p', 'spawn -d dmenu --userscript qute-pass --password-only')
+config.bind("<Ctrl-l>a", "spawn --userscript qute-pass -d dmenu")
+config.bind('<Ctrl-l>u', 'spawn --userscript qute-pass -d dmenu --username-only')
+config.bind('<Ctrl-l>p', 'spawn --userscript qute-pass -d dmenu --password-only')
 
 # quick subreddit open
 config.bind("<Ctrl-r>", "set-cmd-text :open old.reddit.com/r/")
